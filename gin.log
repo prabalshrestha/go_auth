@@ -1,0 +1,49 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] PUT    /api/users/forgotPassword --> login/controllers.ResetPassword (4 handlers)
+[GIN-debug] POST   /api/students/signup      --> login/controllers.RegisterStudent (4 handlers)
+[GIN-debug] POST   /api/users/login          --> login/controllers.Login (4 handlers)
+[GIN-debug] POST   /api/users/logout         --> login/controllers.Logout (4 handlers)
+[GIN-debug] GET    /api/activeUser           --> login/controllers.GetActiveUser (5 handlers)
+[GIN-debug] GET    /api/users/:id            --> login/controllers.GetUser (5 handlers)
+[GIN-debug] GET    /api/roles                --> login/controllers.GetAllRoles (5 handlers)
+[GIN-debug] PUT    /api/users/:id            --> login/controllers.UpdateUser (5 handlers)
+[GIN-debug] PUT    /api/users/changePassword/:id --> login/controllers.ChangePassword (5 handlers)
+[GIN-debug] GET    /api/students             --> login/controllers.GetAllStudents (6 handlers)
+[GIN-debug] GET    /api/users                --> login/controllers.GetAllUser (7 handlers)
+[GIN-debug] POST   /api/users/register       --> login/controllers.CreateUser (7 handlers)
+[GIN-debug] DELETE /api/users/:id            --> login/controllers.DeleteUser (7 handlers)
+[GIN-debug] POST   /api/roles                --> login/controllers.CreateRole (7 handlers)
+[GIN-debug] PUT    /api/roles/:id            --> login/controllers.UpdateRole (7 handlers)
+[GIN-debug] DELETE /api/roles/:id            --> login/controllers.DeleteRole (7 handlers)
+[GIN-debug] GET    /api/roles/:id            --> login/controllers.GetRole (7 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2022/04/14 - 15:46:50 | 204 |      30.995µs |             ::1 | OPTIONS  "/api/users/login"
+[GIN] 2022/04/14 - 15:46:51 | 200 |  912.626764ms |             ::1 | POST     "/api/users/login"
+[GIN] 2022/04/14 - 15:46:51 | 200 |     422.928µs |             ::1 | GET      "/api/students"
+[GIN] 2022/04/14 - 15:47:14 | 401 |      25.433µs |             ::1 | GET      "/api/roles"
+[GIN] 2022/04/14 - 15:47:14 | 401 |      37.025µs |             ::1 | GET      "/api/activeUser"
+[GIN] 2022/04/14 - 15:47:15 | 204 |      11.364µs |             ::1 | OPTIONS  "/api/users/logout"
+[GIN] 2022/04/14 - 15:47:15 | 200 |      20.008µs |             ::1 | POST     "/api/users/logout"
+[GIN] 2022/04/14 - 15:47:49 | 204 |      17.368µs |             ::1 | OPTIONS  "/api/users/login"
+[GIN] 2022/04/14 - 15:47:49 | 200 |  845.063041ms |             ::1 | POST     "/api/users/login"
+[GIN] 2022/04/14 - 15:47:49 | 200 |     640.236µs |             ::1 | GET      "/api/students"
+[GIN] 2022/04/14 - 15:48:13 | 401 |      15.972µs |             ::1 | GET      "/api/roles"
+[GIN] 2022/04/14 - 15:48:13 | 401 |      22.882µs |             ::1 | GET      "/api/activeUser"
+[GIN] 2022/04/14 - 15:48:14 | 204 |       8.861µs |             ::1 | OPTIONS  "/api/users/logout"
+[GIN] 2022/04/14 - 15:48:14 | 200 |      34.182µs |             ::1 | POST     "/api/users/logout"
+[GIN] 2022/04/14 - 15:51:10 | 204 |      11.457µs |             ::1 | OPTIONS  "/api/users/login"
+[GIN] 2022/04/14 - 15:51:11 | 200 |  1.117119839s |             ::1 | POST     "/api/users/login"
+[GIN] 2022/04/14 - 15:51:11 | 200 |     558.681µs |             ::1 | GET      "/api/students"
+[GIN] 2022/04/14 - 15:51:33 | 401 |       20.12µs |             ::1 | GET      "/api/roles"
+[GIN] 2022/04/14 - 15:51:33 | 401 |      22.464µs |             ::1 | GET      "/api/users/6215fbef93fa4a68f6a0a960"
+[GIN] 2022/04/14 - 15:51:33 | 401 |      53.563µs |             ::1 | GET      "/api/activeUser"
+[GIN] 2022/04/14 - 15:51:34 | 401 |      18.361µs |             ::1 | GET      "/api/users/6215fbef93fa4a68f6a0a960"
+[GIN] 2022/04/14 - 15:51:35 | 204 |      22.265µs |             ::1 | OPTIONS  "/api/users/logout"
+[GIN] 2022/04/14 - 15:51:35 | 200 |      42.465µs |             ::1 | POST     "/api/users/logout"

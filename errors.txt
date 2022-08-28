@@ -1,0 +1,26 @@
+-- Middleware
+// Authentication // Middleware 
+401 - No auth header	(no cookie)
+400 - invalid Token , Token expired	(validateTokenError)
+
+// Authorization // Middleware
+403 - Forbidden	(Access denied based on userRole)
+
+
+-- Controller
+// Signup
+/api/users/signup 
+400 - InvalidBody
+400 - ValidationErrors (email,password,userRole.. invalid/missing/duplicate)
+400 - InsertionFailed (should be 500?)
+
+// Login
+/api/users/login
+400 - InvalidBody
+400 - BlankFields
+401 - InvalidCred
+400 - InsertionFailed (should be 500?)
+
+
+
+
